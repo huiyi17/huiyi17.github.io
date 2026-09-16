@@ -23,7 +23,7 @@
 						<div class="content">
 							<div class="inner">
 								<h1>Teh Hui Yi</h1>
-								<p>Hello, I'm Hui Yi, a recent-graduate pursuing a degree in computer science with a minor in Artificial Intelligence at the Singapore University of Technology and Design (SUTD). Welcome to my portfolio, where you can explore both my academic projects and working experiences.
+								<p>Hello, I'm Hui Yi, a computer science graduate with a minor in Artificial Intelligence from the Singapore University of Technology and Design (SUTD), currently working as a Data Engineer with 1 year 2 months of experience. I've also worked on an AI-focused project, applying my minor to real-world applications. Welcome to my portfolio, where you can explore both my academic projects and working experiences.
 								</p>
 							</div>
 						</div>
@@ -32,7 +32,7 @@
 								
 								<li><a href="#work">Work</a></li>
 								<li><a href="#project">Project</a></li>
-								<li><a href="https://github.com/huiyi17/tehhuiyi.github.io/tree/main/Certificate">Certificate</a></li>
+								<li><a href="https://github.com/huiyi17/huiyi17.github.io/tree/main/Certificate">Certificate</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -45,6 +45,8 @@
 						<!-- Work -->
 							<article id="work">
 								<h2 class="major">Working Experiences</h2>
+								<h3 class="major">Phillip Securities Pte. Ltd. <br> (Jul 2025 - Present)</h3>
+								<p>As a Data Engineer, I designed and built a config-driven data transfer pipeline on Apache Airflow, giving teams a standardized, secure way to transfer data across database servers without needing custom pipelines or third-party drivers, saving each team around two months of development effort; this pipeline also orchestrates daily application-monitoring jobs across servers, supporting IT staff organization-wide. I also built an AI-driven Market Insight and Theme Alert System that aggregates real-time financial news, synthesizes it into investment themes using Claude and Cohere Embed with auto-tuned KMeans clustering, then scores and ranks them, applying content moderation before alerting over 100 dealers twice daily via POEMS push notifications. Additionally, I automated the daily Phillip Morning Notes generation by building an ETL pipeline that aggregates and transforms data from multiple sources into an email, eliminating a fully manual, repetitive daily task. On the infrastructure side, I authored and maintained Terraform modules to provision AWS RDS infrastructure and integrated it into the data transfer pipeline, delivering data for vendor-side fraud detection model training.</p>
 								<h3 class="major">ST Engineering Urban Solutions Ltd. <br> (May 2024 - Sep 2024)</h3>
 								<p>I was responsible for developing and training predictive models using LSTM, CNN, and PyCaret, an open-source machine learning library, to enhance the "look up lot availability before you go" feature in the GoParkin application developed by ST Engineering Urban Solutions Smart Carpark Payment Department. This feature leverages AI to forecast hourly car park occupancy at NTU, allowing users to plan their parking strategies effectively. For instance, if a user checks the app and it predicts that a particular car park will be 'Full' in the next hour, they can plan to park elsewhere. I conducted hyperparameter tuning to optimize model performance, achieving 94.07% accuracy on the testing dataset.</p>
 								<h3 class="major">ST Engineering Urban Solutions Ltd. <br> (Sep 2023 - Jan 2024)</h3>
@@ -66,44 +68,44 @@
 								<h2 class="major">Project</h2>
 								<h3 class="major">CHIME (Jan 2025 - Apr 2025)</h3> 
 								<p>The project goal is to develop a mobile game that aims to introduce a crisis management framework that empowers first responders to resolve unexpected emergencies effectively. CHIME, stands for cognitive load, heuristics, information clarity, mental model, external aid. By playing our mobile game, users will be tested on these cognitive factors. </p>
-								<p>Click <a href="https://github.com/huiyi17/tehhuiyi.github.io/tree/main/Smart%20Pillbox">here</a> to take a look on this project and <a href="https://youtu.be/1TFeuhNtHeM">here</a> for the demonstration video.</p>
+								<p>Click <a href="https://github.com/huiyi17/huiyi17.github.io/tree/main/Smart%20Pillbox">here</a> to take a look on this project and <a href="https://youtu.be/1TFeuhNtHeM">here</a> for the demonstration video.</p>
 								<h3 class="major">Smart Pillbox (Sep 2024 - Dec 2024)</h3> 
 								<p>This project aimed to develop a Smart IoT Pillbox that enables continuous monitoring of elderly medication adherence. The solution provides physical and digital reminders for medication intake, allows caregivers to remotely track adherence in real time, and sends refill notifications when medication is consumed. The system combines hardware and cloud-based IoT services to enhance medication management and ensure timely alerts. My contributions involved both hardware integration and cloud-based IoT implementation. I integrated a weight sensor with a Raspberry Pi, wiring a load cell and amplifier to the appropriate GPIO pins. I configured the Raspberry Pi to communicate with AWS IoT Core by installing certificates and the AWS IoT Device SDK, ensuring secure connectivity. I designed an AWS IoT rule to insert and update medication data, such as intake status and pillbox ID, in a DynamoDB table. To automate monitoring, I implemented a scheduled AWS Lambda function using EventBridge, which periodically scanned the database and sent alerts via MQTT if adherence was not met. Additionally, I developed and deployed a Python script (mqtt_client.py) on the Raspberry Pi to read weight sensor data and publish it to AWS MQTT topics. To streamline deployment and ensure consistency, I containerized the solution using Docker. These contributions enhanced the system's efficiency and reliability, offering a scalable solution to improve medication adherence for elderly users.</p>
-								<p>Click <a href="https://github.com/huiyi17/tehhuiyi.github.io/tree/main/Smart%20Pillbox">here</a> to take a look on this project and <a href="https://youtu.be/1TFeuhNtHeM">here</a> for the demonstration video.</p>
+								<p>Click <a href="https://github.com/huiyi17/huiyi17.github.io/tree/main/Smart%20Pillbox">here</a> to take a look on this project and <a href="https://youtu.be/1TFeuhNtHeM">here</a> for the demonstration video.</p>
 								<h3 class="major">Plant Disease Detection (Sep 2024 - Dec 2024)</h3>
 								<span class="image main"><img src="images/Plant_Disease.png" alt="" /></span>
 								<span class="image main"><img src="images/Plant_Disease_1.png" alt="" /></span>
 								<p>This project focused on assisting farmers in monitoring and detecting plant diseases through leaf images, enabling early intervention to mitigate disease spread and reduce crop loss. By leveraging deep learning techniques, we aimed to build an efficient and accurate solution tailored for agricultural needs. I implemented SqueezeNet, a compact model designed to achieve AlexNet-level accuracy with significantly fewer parameters through its innovative fire module design, combining squeeze and expand layers for model size efficiency. Additionally, I utilized InceptionV3, a deep convolutional neural network known for its high accuracy and computational efficiency in image classification tasks. I evaluated both models using metrics such as accuracy, Area Under the Receiver Operating Characteristic Curve (AUROC), and F1 score, ensuring comprehensive assessment of their performance. </p>
-								<p>Click <a href="https://github.com/huiyi17/tehhuiyi.github.io/tree/main/Plant%20Disease%20Detection">here</a> to take a look on this project!</p>
+								<p>Click <a href="https://github.com/huiyi17/huiyi17.github.io/tree/main/Plant%20Disease%20Detection">here</a> to take a look on this project!</p>
 								<h3 class="major">Bitcoin Price Movement Prediction (Jan 2024 - Apr 2024)</h3>
 								<span class="image main"><img src="images/Bitcoin_1.png" alt="" /></span>
 								<span class="image main"><img src="images/Bitcoin_2.png" alt="" /></span>
 								<p>In this project, we aimed to develop a robust machine learning model to predict the direction of Bitcoin’s price movement for the next day using historical price data and relevant features such as trading volume, volatility, sentiment analysis, and technical indicators. To achieve this, we explored a range of machine learning algorithms, including LSTM, SVM, random forest, AdaBoost, MLP, logistic regression, and neural networks. The model’s effectiveness was evaluated using the F1 score, ensuring reliability in binary classification tasks. My primary contributions included data preprocessing and visualization for Bitcoin price data, the US Federal Interest Rate dataset, and the S&P 500 index dataset. I addressed missing values by forward-filling non-trading days, merging datasets on the 'Date' column, and engineering features such as the 'BTC-USD Next Day Close' and 'Price Change Indicator' columns. Additionally, I applied Min-Max normalization to standardize data scales for consistency. I investigated the influence of the S&P 500 index and US Federal interest rate on Bitcoin price movements using a Support Vector Machine (SVM) model, leveraging its capacity to handle non-linear relationships in financial data. This involved training SVM models with polynomial and radial basis function (RBF) kernels through an 80-20 train-test split and optimizing hyperparameters using 10-fold cross-validation with grid search. These contributions played a crucial role in ensuring data integrity, optimizing the model, and uncovering complex relationships in the dataset.</p>
-								<p>Click <a href="https://github.com/huiyi17/tehhuiyi.github.io/tree/main/Bitcoin%20Price%20Movement%20Prediction">here</a> to take a look on this project!</p>
+								<p>Click <a href="https://github.com/huiyi17/huiyi17.github.io/tree/main/Bitcoin%20Price%20Movement%20Prediction">here</a> to take a look on this project!</p>
 								<h3 class="major">Brain Tumour Detection (Jan 2024 - Apr 2024)</h3>
 								<span class="image main"><img src="images/Brain_Tumour.png" alt="" /></span>
 								<p>This deep learning project was designed to assist medical practitioners in accelerating the classification of MRI scans for brain tumors. My role involved training ResNet and DenseNet models to classify MRI scans into one of four categories: glioma, meningioma, pituitary tumor, or no tumor. By leveraging ResNet, I achieved an impressive accuracy of 98.32%, demonstrating the model's effectiveness in precise tumor classification.</p>
-								<p>Click <a href="https://github.com/huiyi17/tehhuiyi.github.io/tree/main/Brain%20Tumour%20Detection">here</a> to take a look on this project!</p>
+								<p>Click <a href="https://github.com/huiyi17/huiyi17.github.io/tree/main/Brain%20Tumour%20Detection">here</a> to take a look on this project!</p>
 								<h3 class="major">SuRe (May 2023 - Aug 2023)</h3>
 								<span class="image main"><img src="images/SURE.png" alt="" /></span>
 								<p>This project focused on establishing a web-based retail invoice data management system. Utilizing Optical Character Recognition (OCR), the system converts physical invoices and statements of account into a customized format, facilitating seamless integration with other software applications. The web application, developed collaboratively by a team of 7 members using the Software Development Life Cycle (SDLC), not only streamlines the conversion process but also empowers retailers to efficiently track their invoice spending.</p>
-								<p>Click <a href="https://github.com/huiyi17/tehhuiyi.github.io/tree/main/SuRe%20(Web%20Application)">here</a> to take a look on this project!</p>
+								<p>Click <a href="https://github.com/huiyi17/huiyi17.github.io/tree/main/SuRe%20(Web%20Application)">here</a> to take a look on this project!</p>
 								<h3 class="major">Grab-N-Go (Jan 2023 - Apr 2023)</h3>
 								<span class="image main"><img src="images/Grab-N-Go.png" alt="" /></span>
 								<p>In response to the persistent issue of long queues during peak hours at the SUTD canteen, the proposed Grab-N-Go mobile application aims to enhance the dining experience for students and staff. By allowing users to pre-order their meals, the application effectively reduces congestion and inconvenience. Users can conveniently select their preferred collection time slot, browse through various stores and menus, customize their orders, and seamlessly collect their food at the designated Grab-N-Go counter. The design prioritizes user-friendliness, ensuring a smoother experience for both customers and canteen vendors, ultimately creating a more efficient and pleasant dining environment.</p>
-								<p>Click <a href="https://github.com/huiyi17/tehhuiyi.github.io/tree/main/Grab-N-Go%20(Mobile%20Application)">here</a> to take a look on this project!</p>
+								<p>Click <a href="https://github.com/huiyi17/huiyi17.github.io/tree/main/Grab-N-Go%20(Mobile%20Application)">here</a> to take a look on this project!</p>
 								<h3 class="major">Chop2Pay (Jan 2023 - Feb 2023)</h3>
 								<span class="image main"><img src="images/aichallenge.jpg" alt="" /></span>
 								<p>Together with Vinny, Jamie and Le Ying as a team, we managed to get into grand final in the National AI Student Challenge 2022 with this project. Chop2pay is a Kivy application utilising Peeking Duck and YOLO object detection model to identify the products that customers place at checkouts. Thus, customer don't need to individually scan their products' barcodes. Chop2pay will automatically detect the products on the conveyor belt using a strategically-placed camera, and ring up those products within seconds.</p>
-								<p>Click <a href="https://github.com/huiyi17/tehhuiyi.github.io/tree/main/Chop2pay">here</a> to take a look on this project!</p>
+								<p>Click <a href="https://github.com/huiyi17/huiyi17.github.io/tree/main/Chop2pay">here</a> to take a look on this project!</p>
 								<h3 class="major">Crop Price Prediction (Sep 2020 - Jan 2021)</h3>
 								<span class="image main"><img src="images/crop.jpg" alt="" /></span>
 								<p>In this project, we leveraged Python to observe the relationship between crop price and quantity of pesticide and herbicide used by performing data visualization. We also performed predictive analysis by building model, evaluating model with metric such as adjusted r^2 and improving the linear regression model using Machine Learning. </p>
-								<p>Click <a href="https://github.com/huiyi17/tehhuiyi.github.io/tree/main/Crop%20Price%20Prediction">here</a> to take a look on this project!</p>
+								<p>Click <a href="https://github.com/huiyi17/huiyi17.github.io/tree/main/Crop%20Price%20Prediction">here</a> to take a look on this project!</p>
 								<h3 class="major">Kindred United (Apr 2020 - Aug 2020)</h3>
 								<span class="image main"><img src="images/kindred.jpg" alt="" /></span>
 								<p>The purpose of this project is to promote the building of positive relationships and stronger bonds among families by leveraging technology such as Node-RED and Arduino to detect family members’ emotion, face recognition for account’s login purpose. Mobile application and web application are also developed for features such as gamification, important event and journal’s recording, activity suggestion as well as family’s goal setting.</p>
-								<p>Click <a href="https://github.com/huiyi17/tehhuiyi.github.io/tree/main/KindredUnited">here</a> to take a look on this project!</p>
+								<p>Click <a href="https://github.com/huiyi17/huiyi17.github.io/tree/main/KindredUnited">here</a> to take a look on this project!</p>
 								
 							</article>
 
